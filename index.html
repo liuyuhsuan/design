@@ -23,14 +23,19 @@
 
 </head>
 
-<body>
-   <div id='wordcloud' style="margin-top: 50px"></div>
-
-<script>
-//testD3();
-//caterpillar();
-//lineSrc();
-myWD();
-</script> 
-</body>
+  <body style="text-align: center">
+    <h1>Word Cloud</h1>
+    <div id='wordcloud'></div>
+    <script>
+    d3.csv("./wc.csv", 
+      function(data)
+      {
+        d3.wordcloud()
+          .size([1000, 600])
+          .fill(d3.scale.ordinal().range(["#884400", "#448800", "#888800", "#444400"]))
+          .words(data)
+          .start();
+      });
+    </script>
+  </body>
 </html>

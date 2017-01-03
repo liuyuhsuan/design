@@ -26,12 +26,12 @@
 <body>
 
 <div id="wordcloud"></div>
-<h1>wc</h1>
+<p style="margin-top:50px">wc</p>
 <script type="text/javascript">
 d3.csv("./wc.csv", function(data) {
   console.log(data);
         d3.wordcloud()
-        .size([800, 400])
+        .size([1000, 600])
         .selector('#wordcloud')
         .words(data)
         .start();
@@ -71,7 +71,7 @@ myWD();
 
  
   <p>search for your movie</p> 
-  <div class="w3-container" style="margin-top:50px">
+  <div class="w3-container" style="margin-top:100px">
   <h3>空白鍵查看所有電影</h3>
 
   <input class="w3-input w3-border " type="text" placeholder="Search for names.." id="myInput" onkeyup="search()">

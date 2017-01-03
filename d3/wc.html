@@ -11,7 +11,7 @@
 d3.csv("./wc.csv", function(data) {
 	console.log(data);
 	      d3.wordcloud()
-        .size([800, 400])
+        .size([1000, 600])
         .selector('#wordcloud')
         .words(data)
         .start();

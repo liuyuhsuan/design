@@ -17,14 +17,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://liuyuhsuan.github.io/design/d3/myWD.js"></script>
   <script src="https://liuyuhsuan.github.io/design/d3/wc/d3.js"></script>
-      <script src="https://liuyuhsuan.github.io/design/d3/wc/d3.layout.cloud.js"></script>
-      <script src="https://liuyuhsuan.github.io/design/d3/wc/d3.wordcloud.js"></script>
+  <script src="https://liuyuhsuan.github.io/design/d3/wc/d3.layout.cloud.js"></script>
+  <script src="https://liuyuhsuan.github.io/design/d3/wc/d3.wordcloud.js"></script>
   
 
 </head>
 
 <body>
+
 <div id="wordcloud"></div>
+<p>wordcloud</p>
+
+
 <script type="text/javascript">
 d3.csv("./wc.csv", function(data) {
   console.log(data);
@@ -35,6 +39,13 @@ d3.csv("./wc.csv", function(data) {
         .start();
 });
 </script>
+<script>
+//testD3();
+//caterpillar();
+//lineSrc();
+myWD();
+</script> 
+
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -731,12 +742,7 @@ function applepie()
   
 <!-- Container (Contact Section) -->
 
-<script>
-//testD3();
-//caterpillar();
-//lineSrc();
-myWD();
-</script> 
+
 
 </body>
 </html>

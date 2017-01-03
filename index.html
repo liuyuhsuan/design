@@ -24,26 +24,6 @@
 </head>
 
 <body>
-<div class="navbar-header">
-  <div id='wordcloud'></div>
-
-<p style="margin-top:50px">wc</p>
-<script type="text/javascript">
-d3.csv("./wc.csv", function(data) {
-  console.log(data);
-        d3.wordcloud()
-        .size([1000, 600])
-        .selector('#wordcloud')
-        .words(data)
-        .start();
-});
-</script>
-<script>
-//testD3();
-//caterpillar();
-//lineSrc();
-myWD();
-</script> 
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -72,7 +52,7 @@ myWD();
 
  
   <p>search for your movie</p> 
-  <div class="w3-container" style="margin-top:100px">
+  <div class="w3-container" style="margin-top:50px">
   <h3>空白鍵查看所有電影</h3>
 
   <input class="w3-input w3-border " type="text" placeholder="Search for names.." id="myInput" onkeyup="search()">

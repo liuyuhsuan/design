@@ -15,11 +15,26 @@
   <script src="http://d3js.org/d3.v3.min.js"></script>
   <script async src="new.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="d3.js"></script>
+<script src="d3.layout.cloud.js"></script>
+<script src="d3.wordcloud.js"></script>
 
   
 
 </head>
+
 <body>
+<div id="wordcloud"></div>
+<script type="text/javascript">
+d3.csv("./wc.csv", function(data) {
+  console.log(data);
+        d3.wordcloud()
+        .size([800, 400])
+        .selector('#wordcloud')
+        .words(data)
+        .start();
+});
+</script>
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">

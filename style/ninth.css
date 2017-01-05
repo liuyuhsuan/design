@@ -6,6 +6,9 @@
     background-color: #eaf1f5;
     background: linear-gradient(to bottom,#eaf1f5,white)
   }
+  h3{
+    color: white;
+  }
   h2 {
       font-size: 24px;
       text-transform: uppercase;

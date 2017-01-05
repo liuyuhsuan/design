@@ -15,11 +15,30 @@
   <script src="http://d3js.org/d3.v3.min.js"></script>
   <script async src="new.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+  <script src="https://liuyuhsuan.github.io/design/d3/myWD.js"></script>
+  <script src="https://liuyuhsuan.github.io/design/d3/d3.js"></script>
+  <script src="https://liuyuhsuan.github.io/design/d3/d3.layout.cloud.js"></script>
+  <script src="https://liuyuhsuan.github.io/design/d3/d3.wordcloud.js"></script>
   
 
 </head>
 <body>
+ <div id='wordcloud'></div>
+    <script>
+    d3.csv("./wc.csv", 
+      function(data)
+      {
+        d3.wordcloud()
+          .size([500, 300])
+          .fill(d3.scale.ordinal().range(["#884400", "#448800", "#888800", "#444400"]))
+          .words(data)
+          .start();
+      });
+
+    </script>
+
+   <div id='wordcloud' style="margin-top: 200px"></div>
+
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -40,6 +59,14 @@
     </div>
   </div>
 </nav>
+<script>
+//testD3();
+//caterpillar();
+//lineSrc();
+myWD();
+</script> 
+</body>
+</html>
 
 
 

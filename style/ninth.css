@@ -1,4 +1,11 @@
-   
+.carousel {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 10px;
+    background-color: #eaf1f5;
+    background: linear-gradient(to bottom,#eaf1f5,white)
+  }
   h2 {
       font-size: 24px;
       text-transform: uppercase;

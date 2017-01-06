@@ -24,28 +24,31 @@
 </head>
 
   <body style="text-align: center">
-    <p style="margin-top:100px" >Word Cloud</p>
+    
+    
+<div class="homepage-hero-module" id="top">
+  <br>
+  <span style="font-size: 100px" style="margin-top: 50px" >觸</span style="margin-top: 60px"> <span>電，</span>
+   <br>
+   <span>怦然心動的瞬間</span>
+   </div>
+
+   <div id='wordcloud' style="margin-top: 200px"></div>
+<p style="margin-top:100px" >Word Cloud</p>
     <div id='wordcloud'></div>
     <script>
     d3.csv("./wc.csv", 
       function(data)
       {
         d3.wordcloud()
-          .size([500, 300])
+          .size([600, 400])
           .fill(d3.scale.ordinal().range(["#884400", "#448800", "#888800", "#444400"]))
           .words(data)
           .start();
       });
 
     </script>
-<div class="homepage-hero-module" id="top">
-  <br>
-  <span style="font-size: 20px" style="margin-top: 60px" >觸</span style="margin-top: 60px"> <span>電，</span>
-   <br>
-   <span>怦然心動</span>
-   </div>
-   <div id='wordcloud' style="margin-top: 200px"></div>
-
+    
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">

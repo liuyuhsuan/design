@@ -1,3 +1,7 @@
+h1{
+  margin-top: 100px;
+
+}
 .carousel {
     display: table;
     width: 100%;
@@ -8,6 +12,7 @@
   }
   h3{
     color: #ffff4d;
+
   }
   h2 {
       font-size: 24px;
